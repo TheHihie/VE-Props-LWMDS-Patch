@@ -1,5 +1,5 @@
 # VE-Props-LWMDS-Patch
-Adds LWM's Deep Storage compatability to some of the props in VE.
+Adds LWM's Deep Storage functionality to some of the props in VE.
 
 Supported props: 
 
