@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Containers -->
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_ContainerStorage">
+    <defName>LWM_VFEPD_ContainerGreen</defName>
+    <label>functional green cargo</label>
+    <description>A green metal cargo container. Impassable. Cannot hold roof.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/ShippingContainer/ShippingContainer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.5,4)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(117,169,119)</color>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+</Operation> 
+
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_ContainerStorage">
+    <defName>LWM_VFEPD_ContainerGrey</defName>
+    <label>functional grey cargo</label>
+    <description>A grey metal cargo container. Impassable. Cannot hold roof.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/ShippingContainer/ShippingContainer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.5,4)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(123,123,123)</color>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+</Operation> 
+
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_ContainerStorage">
+    <defName>LWM_VFEPD_ContainerRed</defName>
+    <label>functional red cargo</label>
+    <description>A red metal cargo container. Impassable. Cannot hold roof.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/ShippingContainer/ShippingContainer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.5,4)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(0.55, 0.30, 0.40)</color>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+</Operation> 
+
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_ContainerStorage">
+    <defName>LWM_VFEPD_ContainerYellow</defName>
+    <label>functional yellow cargo</label>
+    <description>A yellow metal cargo container. Impassable. Cannot hold roof.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/ShippingContainer/ShippingContainer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.5,4)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(221,181,124)</color>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+</Operation> 
+
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_ContainerStorage">
+    <defName>LWM_VFEPD_ContainerBlue</defName>
+    <label>functional blue cargo</label>
+    <description>A blue metal cargo container. Impassable. Cannot hold roof.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/ShippingContainer/ShippingContainer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.5,4)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(127,138,167)</color>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+</Operation> 
+	
+	<!-- Wooden Pallet -->
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="LWM_DeepStorage">
+    <defName>LWM_VFEPD_Pallet</defName>
+    <label>functional pallet</label>
+    <description>A large pallet.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/Pallet/Pallet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+    </graphicData>
+    <rotatable>False</rotatable>
+
+    <researchPrerequisites><li>IndustrialProps</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.1</fillPercent>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <WoodLog>45</WoodLog>
+    </costList>
+    <uiIconScale>1</uiIconScale>
+    <designatorDropdown>Func_IndustrialProps</designatorDropdown>
+    <castEdgeShadows>True</castEdgeShadows>
+	<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+	<priority>Normal</priority>
+	<filter>
+	  <thingDefs>
+	    <li>WoodLog</li>	
+	  </thingDefs>
+	</filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+	<priority>Normal</priority>
+	<filter>
+	  <thingDefs>
+	    <li>WoodLog</li>	
+	  </thingDefs>
+	</filter>
+      </defaultStorageSettings>
+    <isInert>true</isInert>
+    </building>
+	
+	<comps>
+      <li Class="LWM.DeepStorage.Properties" >
+	<minNumberStacks>2</minNumberStacks>
+	<maxNumberStacks>2</maxNumberStacks>
+	<maxTotalMass>60</maxTotalMass>
+	<maxMassOfStoredItem>60</maxMassOfStoredItem>
+	<timeStoringTakes>10</timeStoringTakes>
+	<showContents>true</showContents>
+	<minTimeStoringTakes>20</minTimeStoringTakes>
+    <additionalTimeEachStack>15</additionalTimeEachStack>
+    <additionalTimeEachDef>10</additionalTimeEachDef>
+    <overlayType>SumOfAllItems</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+  </value>
+  </match>
+</Operation> 
+
+	<!-- Barrel Pallets -->
+	
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_BarrelPallet">
+    <defName>LWM_VFEPD_PalletBarrelRed</defName>
+    <label>functional pallet with red barrels</label>
+    <description>Red metal barrels on a wooden pallet. The innate chemfuel coolant inside makes it susceptible to explosions.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/PalletBarrels</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(168,124,120)</color>
+       <shaderType>CutoutComplex</shaderType>
+   </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+  </Operation> 
+	
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_BarrelPallet">
+    <defName>LWM_VFEPD_PalletBarrelGreen</defName>
+    <label>functional pallet with green barrels</label>
+    <description>Green metal barrels on a wooden pallet. The innate chemfuel coolant inside makes it susceptible to explosions.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/PalletBarrels</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(117,169,119)</color>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+  </Operation> 
+	
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_BarrelPallet">
+    <defName>LWM_VFEPD_PalletBarrelGrey</defName>
+    <label>functional pallet with grey barrels</label>
+    <description>Grey metal barrels on a wooden pallet. The innate chemfuel coolant inside makes it susceptible to explosions.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/PalletBarrels</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(123,123,123)</color>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+  </Operation> 
+	
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_BarrelPallet">
+    <defName>LWM_VFEPD_PalletBarrelYellow</defName>
+    <label>functional pallet with yellow barrels</label>
+    <description>Yellow metal barrels on a wooden pallet. The innate chemfuel coolant inside makes it susceptible to explosions.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/PalletBarrels</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(221,181,124)</color>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+  </Operation> 
+  
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>  
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+	<value>
+ <ThingDef ParentName="VE_LWM_BarrelPallet">
+    <defName>LWM_VFEPD_PalletBarrelBlue</defName>
+    <label>functional pallet with blue barrels</label>
+    <description>Blue metal barrels on a wooden pallet. The innate chemfuel coolant inside makes it susceptible to explosions.</description>
+    <graphicData>	
+      <texPath>Things/Building/IndustrialProps/PalletBarrels</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+		<color>(127,138,167)</color>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+  </value>
+  </match>
+  </Operation> 
+	
+</Patch>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Containers -->
+  <ThingDef Name="VE_LWM_ContainerStorage" ParentName="LWM_DeepStorage" Abstract="true">
+    <defName>VE_LWM_ContainerStorage</defName>
+    <costStuffCount>75</costStuffCount>
+	<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+	<priority>Important</priority>
+	<filter>
+	  <categories>
+	    <li>Root</li>	
+	  </categories>
+	</filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+	<priority>Important</priority>
+	<filter>
+	</filter>
+      </defaultStorageSettings>
+    <isInert>true</isInert>
+    </building>
+	
+    <researchPrerequisites><li>IndustrialProps</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <castEdgeShadows>True</castEdgeShadows>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <repairEffect>ConstructMetal</repairEffect>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>100</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <size>(2,4)</size>
+    <costList>
+      <Steel>450</Steel>
+    </costList>
+    <uiIconScale>1</uiIconScale>
+    <designatorDropdown>Func_IndustrialPropsContainers</designatorDropdown>
+	
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+	<minNumberStacks>2</minNumberStacks>
+	<maxNumberStacks>6</maxNumberStacks>
+	<maxTotalMass>300</maxTotalMass>
+	<maxMassOfStoredItem>300</maxMassOfStoredItem>
+	<timeStoringTakes>30</timeStoringTakes>
+	<showContents>false</showContents>
+	<minTimeStoringTakes>20</minTimeStoringTakes>
+    <additionalTimeEachStack>3</additionalTimeEachStack>
+    <additionalTimeEachDef>2</additionalTimeEachDef>
+      </li>
+    </comps>
+  </ThingDef>
+	
+	<!-- Barrel Pallets -->
+  <ThingDef Name="VE_LWM_BarrelPallet" ParentName="LWM_DeepStorage" Abstract="true">
+    <defName>VE_LWM_BarrelPallet</defName>
+    <costStuffCount>75</costStuffCount>
+	<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+    <fixedStorageSettings>
+	  <priority>Important</priority>
+	  <filter>
+	    <thingDefs>
+	      <li>Chemfuel</li>	
+	    </thingDefs>
+	  </filter>
+    </fixedStorageSettings>
+      <defaultStorageSettings>
+	<priority>Important</priority>
+	<filter>
+	</filter>
+      </defaultStorageSettings>
+    <isInert>true</isInert>
+    </building>
+	
+    <researchPrerequisites><li>IndustrialProps</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <castEdgeShadows>True</castEdgeShadows>
+    <blockWind>false</blockWind>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <repairEffect>ConstructMetal</repairEffect>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>100</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+	  <WoodLog>45</WoodLog>
+      <Steel>110</Steel>
+	  <Chemfuel>10</Chemfuel>
+    </costList>
+    <uiIconScale>1</uiIconScale>
+    <designatorDropdown>Func_IndustrialProps</designatorDropdown>
+	<tickerType>Normal</tickerType>
+	
+    <comps>
+    <li Class="LWM.DeepStorage.Properties" >
+	<minNumberStacks>2</minNumberStacks>
+	<maxNumberStacks>3</maxNumberStacks>
+	<maxTotalMass>30</maxTotalMass>
+	<maxMassOfStoredItem>30</maxMassOfStoredItem>
+	<timeStoringTakes>25</timeStoringTakes>
+	<showContents>false</showContents>
+	<minTimeStoringTakes>20</minTimeStoringTakes>
+    <additionalTimeEachStack>30</additionalTimeEachStack>
+    <additionalTimeEachDef>20</additionalTimeEachDef>
+    <overlayType>SumOfAllItems</overlayType>
+    </li>
+	<li Class="CompProperties_Explosive">
+        <wickTicks>500</wickTicks>
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explodeOnKilled>true</explodeOnKilled>
+        <startWickHitPointsPercent>0.3</startWickHitPointsPercent>
+        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+    </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

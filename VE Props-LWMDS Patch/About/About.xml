@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>VE Prop patch for Deep Storage</name>
+	<author>hihie</author>
+
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>hihie.VE.DeepStorage.Patch</packageId>
+
+	<modDependencies>
+		<li>
+			<packageId>VanillaExpanded.VFEPropsandDecor</packageId>
+			<displayName>Vanilla Furniture Expanded - Props and Decor</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>LWM.DeepStorage</packageId>
+			<displayName>LWM's Deep Storage</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1617282896</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	
+	<loadAfter>
+		<li>VanillaExpanded.VFEPropsandDecor</li>
+		<li>LWM.DeepStorage</li>
+	</loadAfter>
+
+	<description>Adds VE Prop functionality for Deep Storage.</description>
+
+
+</ModMetaData>
